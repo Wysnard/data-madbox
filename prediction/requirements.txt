@@ -1,0 +1,8 @@
+plotly
+pandas
+sqlalchemy
+requests
+pymysql
+cryptography
+matplotlib
+statsmodels

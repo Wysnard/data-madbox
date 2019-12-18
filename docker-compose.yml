@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: madbox
+      MYSQL_USER: vlay
+      MYSQL_PASSWORD: 123
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init.sql:/data/application/init.sql
+    command: --init-file /data/application/init.sql
+  injector:
+    build: ./injector
+    environment:
+      - MY_SQL_IP=db
+    depends_on:
+      - db
+  prediction:
+    build: ./prediction
+    environment:
+      - MY_SQL_IP=db
+    depends_on:
+      - db
+      - injector

@@ -27,7 +27,12 @@ Be reassure this long installation step happens only once.
 Next you want to run the application, it will take no time!
 
 ### Open up Tableau
-In ./tableau you will find a DashBoard on the Metrics generated
+In ./tableau you will find a DashBoard on the Metrics generated.
+Tableau will ask you credentials.
+```
+user : vlay
+password : 123
+```
 
 ### How to stop the application
 ```

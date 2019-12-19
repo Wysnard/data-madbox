@@ -45,3 +45,7 @@ Programming Language : Python / Jupyter Notebook
 Library :
 - Forecast : Facebook Prophet
 - Data Vizualisation : Tableau
+
+## Analysis
+You can find some primary data analysis done in a jupyter notebook.
+Don't bother to relaunch the notebook, you can check out the result on the prediction.html
